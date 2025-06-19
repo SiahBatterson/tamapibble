@@ -72,9 +72,9 @@ def pet_action(pet_id):
 @app.route("/cron/decay", methods=["POST"])
 def cron_decay():
     # Rates per minute
-    food_decay = 0.54
-    water_decay = 0.24
-    fun_decay = 0.12
+    food_decay = 0.22
+    water_decay = 0.10
+    fun_decay = 0.07
 
     pets = Pet.query.all()
     for pet in pets:
